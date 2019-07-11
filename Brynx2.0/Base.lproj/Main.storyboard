@@ -65,6 +65,9 @@
                                 <rect key="frame" x="30" y="86" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="hao-TB-43E"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dC4-SC-u2w">
                                 <rect key="frame" x="186" y="261" width="42" height="21"/>
@@ -84,7 +87,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XY8-Zq-dqp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1712" y="56"/>
+            <point key="canvasLocation" x="1691" y="25"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="hao-TB-43E"/>
+    </inferredMetricsTieBreakers>
 </document>

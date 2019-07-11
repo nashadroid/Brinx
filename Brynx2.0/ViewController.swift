@@ -14,21 +14,27 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    var numToSend = 0
+    
     @IBAction func FirstButton(_ sender: Any) {
         
+        numToSend = 30
         performSegue(withIdentifier: "segue", sender: self)
         
     }
     
     @IBAction func SecondButton(_ sender: Any) {
         
-        
+        numToSend = 40
+        performSegue(withIdentifier: "segue", sender: self)
         
     }
     
     @IBAction func ThirdButton(_ sender: Any) {
         
-        
+        numToSend = 40
+        performSegue(withIdentifier: "segue", sender: self)
         
     }
     
@@ -38,6 +44,8 @@ class ViewController: UIViewController {
         var secondController = segue.destination as! ViewController2
     
         secondController.numString = "Hello"
+        
+        secondController.numInt = numToSend
     }
     
 }

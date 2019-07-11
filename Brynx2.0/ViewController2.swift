@@ -15,10 +15,12 @@ class ViewController2: UIViewController {
     
     var numString = String()
     
+    var numInt = Int()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Label.text = numString
+        Label.text = String(numInt)
 
         // Do any additional setup after loading the view.
     }
