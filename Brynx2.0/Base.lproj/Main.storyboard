@@ -98,6 +98,7 @@
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <state key="normal" title="BACK"/>
                                 <connections>
+                                    <action selector="ButtonDismiss:" destination="AX1-td-INP" eventType="touchUpInside" id="njK-c9-SAt"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="hao-TB-43E"/>
                                 </connections>
                             </button>
@@ -552,51 +553,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XY8-Zq-dqp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <stackView opaque="NO" contentMode="scaleToFill" id="gJp-9K-TqB">
-                    <rect key="frame" x="0.0" y="0.0" width="334" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7S-rf-gON">
-                            <rect key="frame" x="0.0" y="0.0" width="142" height="30"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="30" id="iWb-JL-67q"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                            <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guf-6l-Nbg">
-                            <rect key="frame" x="142" y="0.0" width="50" height="30"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="50" id="Gp7-PL-rXl"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                            <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcF-v3-brG">
-                            <rect key="frame" x="192" y="0.0" width="142" height="30"/>
-                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                            <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <constraints>
-                        <constraint firstItem="YcF-v3-brG" firstAttribute="trailing" secondItem="VUP-kX-Dno" secondAttribute="trailing" id="2LJ-84-0DI"/>
-                        <constraint firstItem="guf-6l-Nbg" firstAttribute="centerX" secondItem="gJp-9K-TqB" secondAttribute="centerX" id="uje-ch-am6"/>
-                    </constraints>
-                    <viewLayoutGuide key="safeArea" id="VUP-kX-Dno"/>
-                </stackView>
                 <swipeGestureRecognizer direction="down" id="CIU-xm-ecu">
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" id="LYN-Q4-Cyk"/>
+                        <action selector="SwipeDismiss:" destination="AX1-td-INP" id="BaB-NG-9Fr"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1517" y="25"/>
+            <point key="canvasLocation" x="983" y="25"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="LYN-Q4-Cyk"/>
-    </inferredMetricsTieBreakers>
 </document>
