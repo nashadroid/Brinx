@@ -516,6 +516,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="E12-sn-C8j" firstAttribute="leading" secondItem="WVD-qM-z2V" secondAttribute="leading" constant="40" id="2qz-Ej-iXa"/>
                             <constraint firstItem="WVD-qM-z2V" firstAttribute="bottom" secondItem="E12-sn-C8j" secondAttribute="bottom" constant="50" id="8HH-lE-lsz"/>
@@ -531,6 +532,9 @@
                             <constraint firstItem="dC4-SC-u2w" firstAttribute="top" secondItem="WVD-qM-z2V" secondAttribute="top" constant="140" id="y04-gi-WZD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WVD-qM-z2V"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="CIU-xm-ecu" appends="YES" id="eYq-UZ-8YN"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="Label" destination="dC4-SC-u2w" id="MKb-ZF-sgO"/>
@@ -583,8 +587,9 @@
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="VUP-kX-Dno"/>
                 </stackView>
+                <swipeGestureRecognizer direction="right" id="CIU-xm-ecu"/>
             </objects>
-            <point key="canvasLocation" x="1392.753623188406" y="103.79464285714285"/>
+            <point key="canvasLocation" x="1517" y="25"/>
         </scene>
     </scenes>
 </document>

@@ -15,25 +15,29 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    var nameOfLift = String()
+    
+    var max_dict = ["bench":135,"squat":185,"deadlift":205]
+    
     var numToSend = 0
     
     @IBAction func FirstButton(_ sender: Any) {
         
-        numToSend = 30
+        nameOfLift = "bench"
         performSegue(withIdentifier: "segue", sender: self)
         
     }
     
     @IBAction func SecondButton(_ sender: Any) {
         
-        numToSend = 40
+        nameOfLift = "squat"
         performSegue(withIdentifier: "segue", sender: self)
         
     }
     
     @IBAction func ThirdButton(_ sender: Any) {
         
-        numToSend = 40
+        nameOfLift = "deadlift"
         performSegue(withIdentifier: "segue", sender: self)
         
     }
@@ -43,9 +47,7 @@ class ViewController: UIViewController {
     
         var secondController = segue.destination as! ViewController2
     
-        secondController.numString = "Hello"
-        
-        secondController.numInt = numToSend
+        secondController.numInt = max_dict[nameOfLift]!
     }
     
 }
