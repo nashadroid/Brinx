@@ -587,9 +587,16 @@
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="VUP-kX-Dno"/>
                 </stackView>
-                <swipeGestureRecognizer direction="right" id="CIU-xm-ecu"/>
+                <swipeGestureRecognizer direction="down" id="CIU-xm-ecu">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="LYN-Q4-Cyk"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1517" y="25"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="LYN-Q4-Cyk"/>
+    </inferredMetricsTieBreakers>
 </document>
